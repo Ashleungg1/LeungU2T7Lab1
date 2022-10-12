@@ -33,12 +33,12 @@ public class Main {
         // alphabetize
         int comparison = firstString.compareTo(secondString);
 
-        if (comparison < 0){
-            System.out.println(firstString + " is first alphabetically");
-        } else if (comparison > 0){
-            System.out.println(secondString + " is first alphabetically");
-        } else {
+        if (firstString.equals(secondString)){
             System.out.println("Both strings have the exact same characters");
+        } else if (comparison < 0){
+            System.out.println(firstString + " is first alphabetically");
+        } else {
+            System.out.println(secondString + " is first alphabetically");
         }
 
         // indexing and seeing if str1 contains str2
